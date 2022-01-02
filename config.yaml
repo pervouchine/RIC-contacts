@@ -1,0 +1,20 @@
+samples:
+  RNASeq_rep1:
+    - data/fastq/RNAseq_toy_rep1r0.fastq
+    - data/fastq/RNAseq_toy_rep1r1.fastq
+  RNASeq_rep2:
+    - data/fastq/RNAseq_toy_rep2r0.fastq
+    - data/fastq/RNAseq_toy_rep2r1.fastq
+  RIC-seq_rep1:
+    - data/fastq/RICseq_toy_rep1r0.fastq
+    - data/fastq/RICseq_toy_rep1r1.fastq
+  RIC-seq_rep2:
+    - data/fastq/RICseq_toy_rep2r0.fastq
+    - data/fastq/RICseq_toy_rep2r1.fastq
+samples_RIC: ["RIC-seq_rep1", "RIC-seq_rep2"]
+samples_control: ["RNASeq_rep1", "RNASeq_rep2"]
+star:
+  program: "STAR"
+  genome_path: "data/hg19/genome/index/"
+  runThreadN: 1
+junctions_merge_radius: 10
