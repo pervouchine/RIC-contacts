@@ -5,8 +5,8 @@ download:   data/hg19/genome/index/SA config.yaml
 
 test:
 	snakemake --cores 1 allContacts
-	for f in `ls data/hg19/contacts/`; do cmp data/hg19/contacts/$$f/Neo.tsv data/hg19/test_output/$$f/Neo.tsv; done
-	for f in `ls data/hg19/contacts/`; do cmp data/hg19/contacts/$$f/Chimeric.tsv data/hg19/test_output/$$f/Chimeric.tsv; done
+	for f in `ls data/hg19/contacts/`; do cmp data/hg19/contacts/$$f/Neo.tsv data/hg19/test/$$f/Neo.tsv; done
+	for f in `ls data/hg19/contacts/`; do cmp data/hg19/contacts/$$f/Chimeric.tsv data/hg19/test/$$f/Chimeric.tsv; done
 	### all tests completed successfully ###
 
 
