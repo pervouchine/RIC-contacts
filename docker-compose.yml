@@ -1,0 +1,9 @@
+version: "3.3"
+
+services:
+  riccontact:
+    build: .
+    image: riccontacts
+    volumes:
+      - ./:/work/RIC-contacts
+    command: /bin/bash
