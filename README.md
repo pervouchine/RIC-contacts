@@ -36,6 +36,7 @@ conda config --add channels bioconda
 conda config --add channels conda-forge
 conda install star
 conda install samtools
+conda install bedtools
 conda install bedopts
 conda install snakemake
 ```
